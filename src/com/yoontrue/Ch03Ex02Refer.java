@@ -16,7 +16,6 @@ public class Ch03Ex02Refer {
 		int temp = p.x;
 		p.x = p.y;
 		p.y = temp;
-		
 	}
 	
 	public static void main(String[] args) {
@@ -30,6 +29,4 @@ public class Ch03Ex02Refer {
 		
 		System.out.println("p1 = "+ p1.x + "  p1.y = " + p1.y);
 	}
-
-
 }
