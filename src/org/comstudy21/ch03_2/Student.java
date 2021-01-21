@@ -21,5 +21,4 @@ public class Student{
 	public String toString() {
 		return String.format("이름 : %-20s학과 : %-15s성적 : %-10.1f등수 : %-4d", name,major,score,rank);
 	}
-
 }

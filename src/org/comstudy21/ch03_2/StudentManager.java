@@ -1,5 +1,4 @@
 package org.comstudy21.ch03_2;
-
 import java.util.Scanner;
 
 public class StudentManager {
@@ -19,7 +18,6 @@ public class StudentManager {
 		student.score = scan.nextDouble();
 		System.out.print("등수>>>  ");
 		student.rank = scan.nextInt();
-		
 		return student;
 	}
 	
