@@ -1,14 +1,14 @@
 package org.comstudy21.ch03_2;
-
 import java.util.Scanner;
-
 public class StudentManager {
+	
 	static Scanner scan = new Scanner(System.in);
 	static Scanner scan2 = new Scanner(System.in);		// 문자열 입력용 스캐너
 	static final int MAX = 50;
 	static Student[] stArr = new Student[MAX];
 	static int top = 0;	// max를 카운팅하는거 max보다 크면 그만 입력되도록 하려고 만든 변수...
 	static int no;
+	
 	static Student mkStudent() {
 		Student student = new Student();
 		System.out.print("성명>>>  ");
@@ -19,7 +19,6 @@ public class StudentManager {
 		student.score = scan.nextDouble();
 		System.out.print("등수>>>  ");
 		student.rank = scan.nextInt();
-		
 		return student;
 	}
 	
@@ -65,6 +64,8 @@ public class StudentManager {
 		for(int i=0; i < top; i++) {
 			if(stArr[i].name.equals(searchName)) {
 			System.out.println(stArr[i]);
+			}else {
+				System.out.println("그런 사람 없음");
 			}
 		}
 	}
